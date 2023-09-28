@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.header{
+    background: rgb(223, 145, 55);
+    padding: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: 900;
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_list li{
+    position: relative;
+    float: left;
+    background: black;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    outline: 1px solid rgba(223, 145, 55, 0.5);
+
+}
+.header_list li a{
+    text-decoration: none;
+    color: rgb(223, 145, 55);
+    font-size: 24px;
+    white-space: nowrap;
+    display: block;
+
+}
+.header_list li:hover{
+    background:  rgb(255, 255, 255);
+    outline: 1px solid black;
+}
+.header_second{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.header_list li:hover .header_second{
+    display: block;
+}
+.header_third{
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.header_second li:hover .header_third{
+    display: block;
+}
+.fz0{
+    font-size: 0;
+}
+.bg1{
+    background: rgb(62, 185, 62);
+}
+.outline{
+    outline: 2px solid rgb(0, 0, 0);
+}
+.w_400{
+    width: 400px;
+}
+.h_400{
+    height: 400px;
+}
+.fz30{
+    font-size: 30px;
+}
+.i_block{
+    display: inline-block;
+}
+.bg2{
+    background: red;
+}
+.fz0{
+    font-size: 0;
+}
+.w2_800{
+    width: 800px;
+}
+.h2_200{
+    height: 200px;
+}
+.w2_400{
+    width: 400px;
+}
+.h2_133{
+    height: 133.333px;
+}
+.overflow{
+    overflow: hidden;
+}
+.second_div > div{
+    display: inline-block;
+    font-size: 30px;
+}
+.third_div{
+    background: violet;
+    outline: 2px solid black;
+    font-size: 0;
+    text-align: justify;
+}
+.third_div div{
+    outline: 2px solid black;
+}
+.third_div > div{
+    font-size: 30px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+
+}
+.third_div > div + div{
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+}
+.third_div > div + div > div{
+    height: 200px;
+    overflow: hidden;
+}
+.third_div > div + div > div + div{
+    font-size: 0;
+}
+.third_div > div + div > div + div > div{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    overflow: hidden;
+}
+.third_div > div + div > div + div > div + div{
+    height: auto;
+    overflow: hidden;
+}
+.third_div > div + div > div + div > div + div > div{
+    height: 100px;
+    overflow: hidden;
+}
+
+table, td, th {
+    border: 2px solid black;
+}
+th, td {
+    width: 70px;
+    height: 50px;
+}
+.bg11{
+    background: grey;
+}
+.bg22{
+    background: rgb(75, 66, 14);
+}
+.bg33{
+    background: rgb(0, 240, 0);
+}
+.bg44{
+    background: rgb(0, 48, 0);
+
+}
+.bg55{
+    background: yellow;
+}
+.bg66{
+    background: blue;
+}
+
+
+.pad{
+    padding-top: 30px;
+}
+.w_gallary_700{
+    width: 700px;
+}
+.mar{
+    margin: 0 auto;
+}
+.img_h{
+    height: 100%;
+}
+.img_w{
+    width: 100%;
+}
+.obj_fit{
+    object-fit: cover;
+}
+.div_position{
+    position: relative;
+}
+
+.c_fz{
+    font-size: 25px;
+}
+.c_pos{
+    position: absolute;
+}
+.lef{
+    left: 0;
+}
+.top{
+    top: 50%;
+}
+.m_top{
+    margin-top: -100px;
+}
+.rig{
+    right: 0;
+}
+.bg_c{
+    background: hsla(78, 16%, 13%, 0.5);
+}
+.col{
+    color: #fff;
+}
+.card_height{
+    height: 200px;
+}
+.align{
+    align-items: center;
+}
+.jus_con{
+    justify-content: center;
+}
+.disp{
+    display: flex;
+}
+.padd{
+    padding: 20px;
+}
+.over{
+    overflow: auto
+}
+.z_ind{
+    z-index: -1;
+}
+
+.pad > div:hover p{
+    z-index: 1;
+}
+
+
+
+.flx{
+    display: flex;
+}
+.bg_flx{
+    background: orange;
+}
+.w400_w{
+    width: 400px;
+}
+.h400_h{
+    height: 400px;
+}
+.outline{
+    outline: 2px solid black;
+}
+
+.bg__fx{
+    background: lightcoral;
+}
+.outline{
+    outline: 2px solid black;
+}
+.flx{
+    display: flex;
+}
+.h200{
+    height: 200px;
+}
+.w800{
+    width: 800px;
+}
+.h133{
+    height: 133.333px;
+}
+
+.flx{
+    display: flex;
+}
+.bg___fx{
+    background: lightseagreen;
+}
+.last_h400{
+    height: 400px;
+}
+.last_w800{
+    width: 800px;
+}
+.last_h200{
+    height: 200px;
+}
+.flx_1{
+    display: flex;
+}
+.w400px{
+    width: 400px;
+}
+.h200px{
+    height: 200px;
+}
+.w400_px{
+    width: 400px;
+}
+.h_100px{
+    height: 100px;
+}
+
+
+
+.fltt{
+    float: left;
+}
+.bgg{
+    background: violet;
+}
+.fw_400px{
+    width: 400px;
+}
+.hf_400px{
+    height: 400px;
+}
+.float_l{
+    float: left;
+}
+.f_w_800{
+    width: 800px;
+}
+.h200px{
+    height: 200px;
+}
+.bg_flt{
+    background: blue;
+}
+.f_w_400{
+    width: 400px;
+}
+.f133{
+    height: 133.333px;
+}
+.flt{
+    float: left;
+}
+
+.bg_5{
+    background: greenyellow;
+}
+.flut1{
+    float: left;
+}
+
+.wud{
+    width: 400px;
+}
+.hud{
+    height: 400px
+}
+
+.w800px{
+    width: 800px;
+}
+.flut{
+    float: left;
+}
+.he200px{
+    height: 200px;
+}
+.wud1{
+    width: 400px;
+}
+.hud1{
+    height: 200px;
+}
+.flut2{
+    float: left;
+}
+
+
+.wud2{
+    width: 400px;
+}
+.hud2{
+    height: 100px;
+}
+.flut3{
+    float: left;
+}
+.main_wud{
+    width: 400px;
+}
+.flut3{
+    float: left;
+}
+
+
+
+
+
+
+
