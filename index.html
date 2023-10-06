@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Menu</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="box">
-                <a href="#" class="logo">LOGO</a>
-            <ul class="header_list">
-                <li><a class="home" href="/projects/index.html" target="_blank">Main Page</a></li>
-                <li><a class="gallary" href="/projects/gallary.html" target="_blank">Gallery</a></li>
-                <li><a class="homeorks" href="#"> HomeWorks</a>
-                    <ul class="header_second">
-                        <li><a href="/projects/table.html" target="_blank">Table</a></li>
-                        <li><a href="/projects/inline.html" target="_blank">Inline-block</a></li>
-                        <li><a href="/projects/float.html" target="_blank">Float</a></li>
-                        <li><a class="layouts" href="#">Layouts</a>
-                            <ul class="header_third">
-                                <li><a href="/projects/flex.html" target="_blank">Flex</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+      <div class="container">
+        <div class="box">
+          <a href="#" class="logo">LOGO</a>
+          <ul class="header_list">
+            <li>
+              <svg class="icons">
+                <use href="img/sprite.svg#home"></use>
+              </svg>
+              <a class="home" href="/projects/index.html" target="_blank"
+                >Main Page</a
+              >
+            </li>
+            <li>
+              <svg class="icons">
+                <use href="img/sprite.svg#gallary"></use>
+              </svg>
+              <a class="gallary" href="/projects/gallary.html" target="_blank"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a class="homeworks" href="#" style="padding: 20px 50px 20px 20px;"> HomeWorks</a>
+              <svg class="icon_last">
+                <use href="img/sprite.svg#down"></use>
+              </svg>
+              <ul class="header_second">
+                <li>
+                  <a href="/projects/table.html" target="_blank">Table</a>
                 </li>
-            </ul>
+                <li>
+                  <a href="/projects/inline.html" target="_blank"
+                    >Inline-block</a
+                  >
+                </li>
+                <li>
+                  <a href="/projects/float.html" target="_blank">Float</a>
+                </li>
+                <li>
+                  <svg class="icons">
+                    <use href="img/sprite.svg#left"></use>
+                  </svg>
+                  <a class="layouts" href="#">Layouts</a>
+                  <ul class="header_third">
+                    <li>
+                      <a href="/projects/flex.html" target="_blank">Flex</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        </div>
-
+      </div>
     </header>
-    
-</body>
+  </body>
 </html>
+
+
+

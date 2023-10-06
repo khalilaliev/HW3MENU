@@ -49,7 +49,7 @@ table {
     position: relative;
 }
 .header{
-    background: rgb(175, 55, 55);
+    background: rgb(143, 81, 0);
     padding: 15px;
 }
 .box{
@@ -65,40 +65,47 @@ table {
     font-weight: 900;
     font-size: 36px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    outline: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 14px;
+    transition: 0.2s;
+}
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .header_list li{
     position: relative;
     float: left;
-    background: rgb(175, 55, 55);
+    background: rgb(143, 81, 0);
     text-transform: uppercase;
-    outline: 1px solid rgb(0, 0, 0);
+    outline: 1px solid rgba(255, 255, 255, 0.349);
 
 }
 .header_list li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     white-space: nowrap;
     display: inline-block;
-    padding: 20px 50px;
+    padding: 20px 20px 20px 50px;
+}
 
-}
 .header_list li:hover{
-    background:  rgb(255, 255, 255);
-    outline: 1px solid black;
+    background: rgb(0, 0, 0);
+    outline: 1px solid rgba(255, 255, 255, 0.349);
 }
+
 .header_second{
     position: absolute;
-    top: 100%;
+    top: -1000%;
     left: 0;
-    display: none;
+    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
 }
 .header_list li:hover .header_second{
-    display: block;
+    top: 100%;
+    z-index: 1;
+
 }
 .header_third{
     position: absolute;
@@ -110,6 +117,42 @@ table {
 .header_second li:hover .header_third{
     display: block;
 }
+
+
+.icons {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    fill: rgb(255, 255, 255);
+}
+.icon_last{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    fill: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fz0{
     font-size: 0;
 }
@@ -454,19 +497,3 @@ th, td {
 .flut3{
     float: left;
 }
-
-.home{
-    background: url(../img/home1.svg) no-repeat 10px / 30px; 
-}
-.gallary{
-    background: url(../img/gallary.svg) no-repeat 10px / 30px;
-}
-.homeorks{
-    background: url(../img/arrowdown.svg) no-repeat 210px / 30px;
-}
-.layouts{
-    background: url(../img/arrowleft.svg) no-repeat 10px / 30px;
-}
-
-
-
