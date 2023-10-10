@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'DM Sans 18pt';
+    src: url('../fonts/DMSans18pt-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans 24pt';
+    src: url('../fonts/DMSans24pt-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 *, *::before, *::after{
     box-sizing: border-box;
 }
@@ -43,14 +66,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body{
+    background: #171717;
+
+}
 .container{
     margin: 0 auto;
     width: 1200px;
     position: relative;
+    
 }
 .header{
-    background: rgb(143, 81, 0);
+    background: rgb(94, 94, 94);
     padding: 15px;
+    border-bottom: 1px solid blue;
+   
 }
 .box{
     display: flex;
@@ -67,20 +97,25 @@ table {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 14px;
+    font-family: DM Sans;
+    font-weight: 700;
     transition: 0.2s;
 }
 .logo:hover{
     transform: scale(1.1);
+    color: rgb(0, 0, 207);
+
 }
 
 .header_list li{
     position: relative;
     float: left;
-    background: rgb(143, 81, 0);
+    background: rgb(94, 94, 94);
     text-transform: uppercase;
-    outline: 1px solid rgba(255, 255, 255, 0.349);
-
 }
+
+
+
 .header_list li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -88,13 +123,11 @@ table {
     white-space: nowrap;
     display: inline-block;
     padding: 20px 20px 20px 50px;
+    font-family: DM Sans;
 }
-
 .header_list li:hover{
     background: rgb(0, 0, 0);
-    outline: 1px solid rgba(255, 255, 255, 0.349);
 }
-
 .header_second{
     position: absolute;
     top: -1000%;
@@ -135,24 +168,26 @@ table {
     right: 10px;
     fill: rgb(255, 255, 255);
 }
+.icons{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 135px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.header_list li a:hover{
+    color: blue;
+}
+.header_list li:hover .icons{
+    fill: blue;
+}
+.header_list li:hover .icon_last{
+    fill: blue;
+}
+.header_list li:hover .icons55{
+    fill: rgb(255, 255, 255);
+}
 .fz0{
     font-size: 0;
 }
@@ -214,7 +249,6 @@ table {
     width: 400px;
     height: 400px;
     overflow: hidden;
-
 }
 .third_div > div + div{
     width: 800px;
@@ -270,8 +304,6 @@ th, td {
 .bg66{
     background: blue;
 }
-
-
 .pad{
     padding-top: 30px;
 }
@@ -343,9 +375,6 @@ th, td {
 .pad > div:hover p{
     z-index: 1;
 }
-
-
-
 .flx{
     display: flex;
 }
@@ -411,9 +440,6 @@ th, td {
 .h_100px{
     height: 100px;
 }
-
-
-
 .fltt{
     float: left;
 }
@@ -480,8 +506,6 @@ th, td {
 .flut2{
     float: left;
 }
-
-
 .wud2{
     width: 400px;
 }
@@ -496,4 +520,181 @@ th, td {
 }
 .flut3{
     float: left;
+}
+
+
+/*! SIDEBAR */
+
+
+.sidebar{
+    background: rgb(94, 94, 94);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 96px;
+    width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all .4s linear;
+
+}
+.wrapper{
+    padding-left: 90px;
+    transition: all .4s linear;
+}
+.sidebar_link {
+    text-decoration: none;
+    position: relative;
+}
+.sidebar_text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 40px 20px 40px 90px;
+    font-family: DM Sans;
+    text-transform: uppercase;
+}
+.sidebar_item :hover{
+    background: rgb(0, 0, 0);
+
+}
+.sidebar:hover{
+    width: 300px;
+}
+.sidebar:hover + .wrapper{
+    padding-left: 300px;
+}
+
+.sidebar_icon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    margin-top: -30px;
+    border: 1px solid white;
+    transition: all .2s linear;
+}
+.span_icon{
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    transition: all .2s linear;
+    fill: #fff;
+}
+.sidebar_text:hover{
+    color: blue;
+}
+.sidebar_item:hover .sidebar_icon{
+    rotate: 45deg;
+    border: 1px solid blue;
+}
+.sidebar_item:hover .span_icon{
+    fill: blue;
+    rotate: -45deg;
+    transform: scale(1.1);
+}
+.sidebar_list li a::before,
+.sidebar_list li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: blue;
+    transition: width .5s linear;
+}
+.sidebar_list li a:hover::before,
+.sidebar_list li a:hover::after{
+    width: 100%;
+}
+
+/*! SECOND SIDEBAR */
+
+.div_box{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background: rgb(94, 94, 94);
+    padding: 50px 20px;
+    transition: all .4s linear;
+    transform: translateX(100%);
+}
+.div_list li{
+    padding: 20px 50px;
+}
+.div_list li a{
+    font-size: 24px;
+    font-family: DM Sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 60px;
+}
+.div_list li a:hover{
+    background: rgb(0, 0, 0);
+    color: blue;
+}
+.setting_icon{
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -20px;
+    margin-right: 1px;
+    padding: 5px;
+    background: blue;
+    border-radius: 50%;
+}
+.div_box:hover {
+    transform: translateX(1%);
+}
+.setting_icon{
+    animation-name: spin; 
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.div_box:hover .setting_icon{
+    animation-play-state: paused;
+}
+.div_item a::before,
+.div_item a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: blue;
+    transition: width .5s linear;
+}
+
+.div_item a::after{
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+}
+.div_item a:hover::before,
+.div_item a:hover::after{
+    width: 100%;
 }
